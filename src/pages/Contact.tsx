@@ -3,7 +3,6 @@ import { useLanguage } from '../i18n/LanguageContext';
 import AnimatedSection from '../components/AnimatedSection';
 import {
     FaLocationDot, FaPhone, FaEnvelope, FaClock,
-    FaLinkedin, FaXTwitter, FaInstagram,
     FaPaperPlane, FaCheck
 } from 'react-icons/fa6';
 
@@ -29,11 +28,7 @@ export default function Contact() {
         { icon: <FaClock size={20} />, label: t('contact.info.hours'), value: t('contact.info.hoursValue') },
     ];
 
-    const socials = [
-        { icon: <FaLinkedin size={22} />, href: 'https://linkedin.com', label: 'LinkedIn' },
-        { icon: <FaXTwitter size={22} />, href: 'https://twitter.com', label: 'Twitter' },
-        { icon: <FaInstagram size={22} />, href: 'https://instagram.com', label: 'Instagram' },
-    ];
+
 
     return (
         <div className="page-wrapper">
@@ -130,23 +125,7 @@ export default function Contact() {
                                     ))}
                                 </div>
 
-                                <div className="contact-social">
-                                    <h3>{t('contact.social.title')}</h3>
-                                    <div className="contact-social__links">
-                                        {socials.map((s, i) => (
-                                            <a
-                                                key={i}
-                                                href={s.href}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="contact-social__link"
-                                                aria-label={s.label}
-                                            >
-                                                {s.icon}
-                                            </a>
-                                        ))}
-                                    </div>
-                                </div>
+
                             </div>
                         </AnimatedSection>
                     </div>

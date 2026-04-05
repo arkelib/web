@@ -1,16 +1,16 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
 import AnimatedSection from '../components/AnimatedSection';
-import { FaBrain, FaChartLine, FaComments, FaEye, FaArrowRight } from 'react-icons/fa6';
+import { FaCode, FaChartLine, FaCloud, FaGear, FaArrowRight } from 'react-icons/fa6';
 
 export default function Home() {
     const { t } = useLanguage();
 
     const services = [
-        { icon: <FaBrain size={32} />, titleKey: 'services.ai.title', descKey: 'services.ai.desc' },
+        { icon: <FaCode size={32} />, titleKey: 'services.ai.title', descKey: 'services.ai.desc' },
         { icon: <FaChartLine size={32} />, titleKey: 'services.ml.title', descKey: 'services.ml.desc' },
-        { icon: <FaComments size={32} />, titleKey: 'services.nlp.title', descKey: 'services.nlp.desc' },
-        { icon: <FaEye size={32} />, titleKey: 'services.cv.title', descKey: 'services.cv.desc' },
+        { icon: <FaCloud size={32} />, titleKey: 'services.nlp.title', descKey: 'services.nlp.desc' },
+        { icon: <FaGear size={32} />, titleKey: 'services.cv.title', descKey: 'services.cv.desc' },
     ];
 
     const stats = [
@@ -50,11 +50,7 @@ export default function Home() {
                 </div>
 
                 <div className="container hero__content">
-                    <AnimatedSection>
-                        <div className="hero__badge-wrapper">
-                            <span className="badge">{t('hero.badge')}</span>
-                        </div>
-                    </AnimatedSection>
+
                     <AnimatedSection delay={100}>
                         <h1 className="hero__title">
                             {t('hero.title')}<br />

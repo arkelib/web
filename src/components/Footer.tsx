@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
-import { FaLinkedin, FaXTwitter, FaInstagram } from 'react-icons/fa6';
+
 
 export default function Footer() {
     const { t } = useLanguage();
@@ -17,17 +17,7 @@ export default function Footer() {
                             <span className="footer__brand-text">ARKELIB</span>
                         </div>
                         <p className="footer__desc">{t('footer.desc')}</p>
-                        <div className="footer__social">
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                                <FaLinkedin size={20} />
-                            </a>
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                                <FaXTwitter size={20} />
-                            </a>
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                                <FaInstagram size={20} />
-                            </a>
-                        </div>
+
                     </div>
 
                     <div className="footer__col">
