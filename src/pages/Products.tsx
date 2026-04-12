@@ -1,6 +1,6 @@
 import { useLanguage } from '../i18n/LanguageContext';
 import AnimatedSection from '../components/AnimatedSection';
-import { FaChartBar, FaLanguage, FaCamera, FaRobot, FaArrowRight, FaCheck } from 'react-icons/fa6';
+import { FaChartBar, FaLanguage, FaCamera, FaRobot, FaArrowRight, FaCheck, FaScaleBalanced } from 'react-icons/fa6';
 
 export default function Products() {
     const { t } = useLanguage();
@@ -31,7 +31,7 @@ export default function Products() {
             featuresKey: 'products.p3.features',
             color: '#8b5cf6',
             gradient: 'linear-gradient(135deg, #8b5cf6, #6d28d9)',
-            status: 'coming',
+            status: 'active',
         },
         {
             icon: <FaRobot size={32} />,
@@ -40,7 +40,16 @@ export default function Products() {
             featuresKey: 'products.p4.features',
             color: '#6366f1',
             gradient: 'linear-gradient(135deg, #6366f1, #4f46e5)',
-            status: 'coming',
+            status: 'active',
+        },
+        {
+            icon: <FaScaleBalanced size={32} />,
+            titleKey: 'products.p5.title',
+            descKey: 'products.p5.desc',
+            featuresKey: 'products.p5.features',
+            color: '#f59e0b',
+            gradient: 'linear-gradient(135deg, #f59e0b, #d97706)',
+            status: 'active',
         },
     ];
 
